@@ -1,0 +1,12 @@
+com/amastigote/unstamper/io/IOHandler$FileNameDuplicateException.class
+com/amastigote/unstamper/Main.class
+com/amastigote/unstamper/core/MarkedContentFlattener.class
+com/amastigote/unstamper/log/GeneralLogger$Help.class
+com/amastigote/unstamper/core/TextStampRecognizer.class
+com/amastigote/unstamper/io/IOHandler.class
+com/amastigote/unstamper/log/GeneralLogger.class
+com/amastigote/unstamper/util/TaskRunner.class
+com/amastigote/unstamper/core/Processor.class
+com/amastigote/unstamper/util/OptionManager.class
+com/amastigote/unstamper/log/GeneralLogger$Processor.class
+com/amastigote/unstamper/log/GeneralLogger$File.class

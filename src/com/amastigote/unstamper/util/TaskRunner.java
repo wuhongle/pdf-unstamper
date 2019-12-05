@@ -10,8 +10,8 @@ package com.amastigote.unstamper.util;
 import com.amastigote.unstamper.core.Processor;
 import com.amastigote.unstamper.io.IOHandler;
 import com.amastigote.unstamper.log.GeneralLogger;
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.io.IOException;

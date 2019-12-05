@@ -7,7 +7,7 @@
  */
 package com.amastigote.unstamper.core;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import org.apache.pdfbox.pdmodel.font.PDCIDFontType0;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
@@ -70,6 +70,8 @@ class TextStampRecognizer {
         if (useStrict) {
             return input.equals(keyword);
         } else {
+            System.out.println(input);
+            System.out.println(keyword);
             return input.contains(keyword);
         }
     }

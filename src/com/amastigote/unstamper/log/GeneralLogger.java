@@ -8,7 +8,7 @@
 package com.amastigote.unstamper.log;
 
 import com.amastigote.unstamper.Main;
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class GeneralLogger {
     public static class Help {

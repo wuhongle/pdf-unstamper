@@ -8,7 +8,7 @@
 package com.amastigote.unstamper.core;
 
 import com.amastigote.unstamper.log.GeneralLogger;
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSName;
@@ -70,6 +70,7 @@ public class Processor {
                         /* Ignore Any Exception During Parallel Processing */
                         try {
                             PDFont pdFont = pdPage.getResources().getFont(fontName);
+                            System.out.println(fontName);
                             if (Objects.nonNull(pdFont))
                                 pdFonts.add(pdFont);
                         } catch (Exception ignored) {
@@ -152,7 +153,9 @@ public class Processor {
                                     }
                                     testStr = builder.toString();
                                 } else if (prevObject instanceof COSString) {
-                                    testStr = ((COSString) prevObject).toString();
+                                    System.out.println(((COSString) prevObject).getForceHexForm());
+                                    testStr = ((COSString) prevObject).toHexString();
+
                                 } else {
                                     continue;
                                 }
