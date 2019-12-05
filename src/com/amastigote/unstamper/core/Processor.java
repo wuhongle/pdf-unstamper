@@ -57,6 +57,7 @@ public class Processor {
             PDDocument pdDocument = PDDocument.load(file);
 
             pdDocument.getPages().forEach(pdPage -> {
+                System.out.println("Page Start");
                 try {
                     boolean needRewrite;
 
@@ -70,7 +71,6 @@ public class Processor {
                         /* Ignore Any Exception During Parallel Processing */
                         try {
                             PDFont pdFont = pdPage.getResources().getFont(fontName);
-                            System.out.println(fontName);
                             if (Objects.nonNull(pdFont))
                                 pdFonts.add(pdFont);
                         } catch (Exception ignored) {
@@ -153,7 +153,6 @@ public class Processor {
                                     }
                                     testStr = builder.toString();
                                 } else if (prevObject instanceof COSString) {
-                                    System.out.println(((COSString) prevObject).getForceHexForm());
                                     testStr = ((COSString) prevObject).toHexString();
 
                                 } else {

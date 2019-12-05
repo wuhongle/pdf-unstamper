@@ -109,4 +109,6 @@ Get [*pdf-unstamper.jar*](https://github.com/hwding/pdf-unstamper/releases).
 ➜ java -jar pdf-unstamper.jar -I pdfs/ -O unstampedPdfs/ -r -k 图灵社区会员 www.allitebooks.com -c
 # Or
 ➜ java -jar pdf-unstamper.jar -I pdfs/ -d -r -k 图灵社区会员 www.allitebooks.com -c
+
+java -jar unstamper-0.2.5.jar -i ~/Downloads/xxxx.pdf -o 2.pdf -k 05A308B20951051A046B05740003
 ```
